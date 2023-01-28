@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Flex', sans-serif;
+
+}
+
+
+/* --------------------------- MOBILE VERSION ------------------------------ */
+.paget {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75em;
+}
+
+.covert {
+    background-color: white;
+    margin: 10% auto; 
+    width: 80%;
+    height: 40vh;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.alt-logint {
+    width: 80%;
+    height: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.alt-logint div {
+    width: 47.5%;
+    height: 90%;
+    border-radius: 0.25em;
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.google {background-image: url("../Photos/google.png");}
+
+TextFeild {
+    border: none;
+    background-color: rgb(229, 226, 226);
+    width: 80%;
+    border-radius: 0.25em;
+    text-align: center;
+    padding: 2em;
+    font-size: 0.75em;
+}
+
+TextFeild:focus {
+    outline-color: rgb(32, 177, 255);
+}
+
+.login-btnt {
+    width: 40%;
+    height: 3em;
+    background-color: rgb(32, 177, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+.login-btnt:hover { transform: scale(1.05);}
+
+.textt {
+    position: relative;
+    bottom: 0.5%;
+}
+
+.hidet {
+    position: absolute;
+    transform: scale(0);
+}
+
+.login-popupt {
+    position: absolute;
+    height: 30em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25em;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    transform: scale(1);
+    transition: 1.5s;
+}
+
+.bluet {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../Photos/google.png");
+}
+
+.but:hover{
+    cursor: none;
+}
+.but{
+    cursor: none;
+    width: 90%;
+    height: 5.5em;
+    color: rgba(29, 146, 210, 0.778);
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25em;
+}
+.icon{
+    position: relative;
+    left: 32%;
+    bottom: -14%;
+}
+.Profile{
+    position: relative;
+    /* right: 43%; */
+    top: -10%;
+}
+.dml{
+    color: #1976d2;
+}
+.dml:hover{
+    color: rgb(255, 255, 255);
+}
+
+/* -------------------- TABLET OPTIMIZATION -------------------- */
+@media only screen and (min-device-width: 37em) {
+    .paget {
+        font-size: 1em;
+    }
+
+    .covert{
+        margin: 10% auto; 
+        width: 60%;
+        height: 50vh;
+    }
+    .icon{
+        position: relative;
+        left: 35%;
+        bottom: -16%;
+    }
+    .Profile{
+        position: relative;
+        right: 35%;
+        top: -16%;
+    }
+}
+
+/* -------------------- DESKTOP OPTIMIZATION -------------------- */
+@media only screen and (min-device-width: 64em) {
+    .paget {
+        font-size: 1.25em;
+    }
+
+    .covert {
+        margin: 7% auto; 
+        width: 70%;
+        height: 35vh;
+    }
+    .icon{
+        position: relative;
+        left: 43%;
+        bottom: -14%;
+    }
+    .Profile{
+        position: relative;
+        right: 43%;
+        top: -14%;
+    }
+}
