@@ -18,7 +18,8 @@ const LoginForm = () => {
             alert("Fields are required");
             return;
         } else {
-            Axios.post("http://localhost:8000/loginform",
+            console.log("hello");
+            Axios.post("https://long-ruby-quail-slip.cyclic.app/loginform",
                 {
                     username: email
                     , password: password

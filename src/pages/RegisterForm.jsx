@@ -24,7 +24,7 @@ const LoginForm = () => {
             alert("Fields are required")
             return;
         } else {
-            Axios.post("http://localhost:8000/",
+            Axios.post("https://long-ruby-quail-slip.cyclic.app/",
                 {
                     username: email,
                     password: password,
@@ -66,7 +66,7 @@ const LoginForm = () => {
         // alert("User signed in");
         console.log(e.profileObj.imageUrl);
         // console.log(e.profileObj.name);
-        Axios.post("http://localhost:8000/",
+        Axios.post("https://long-ruby-quail-slip.cyclic.app/",
             {
                 username: e.profileObj.name,
                 password: e.profileObj.name,
@@ -81,14 +81,6 @@ const LoginForm = () => {
                     }).toString()
                 });
             });
-
-        // navigate({
-        //     pathname: '/tickets',
-        //     search: createSearchParams({
-        //         user: e.profileObj.name,
-        //         imageUrl: e.profileObj.imageUrl
-        //     }).toString()
-        // });
     }
 
     const onFailure = e => {
