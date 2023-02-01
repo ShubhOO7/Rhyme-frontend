@@ -47,7 +47,7 @@ const Ticket = ({ data }) => {
             alert("Please Enter some Rhymes");
             return;
         } else {
-            Axios.post("https://long-ruby-quail-slip.cyclic.app/tickets/create",
+            Axios.post("http://localhost:8000/tickets/create",
                 {
                     Username: data.Username,
                     Song: song,
@@ -72,7 +72,7 @@ const Ticket = ({ data }) => {
             alert("Kindly Login Again To Update this song ");
             return;
         } else {
-            Axios.post("https://long-ruby-quail-slip.cyclic.app/tickets/delete",
+            Axios.post("http://localhost:8000/tickets/delete",
                 {
                     Username: data.Username,
                     Song: song,

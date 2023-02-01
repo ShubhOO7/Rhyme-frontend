@@ -24,7 +24,7 @@ const LoginForm = () => {
             alert("Fields are required")
             return;
         } else {
-            Axios.post("https://long-ruby-quail-slip.cyclic.app/",
+            Axios.post("http://localhost:8000/",
                 {
                     username: email,
                     password: password,
@@ -66,7 +66,7 @@ const LoginForm = () => {
         // alert("User signed in");
         console.log(e.profileObj.imageUrl);
         // console.log(e.profileObj.name);
-        Axios.post("https://long-ruby-quail-slip.cyclic.app/",
+        Axios.post("http://localhost:8000/",
             {
                 username: e.profileObj.name,
                 password: e.profileObj.name,

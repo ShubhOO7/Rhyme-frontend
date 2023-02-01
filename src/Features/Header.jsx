@@ -83,7 +83,7 @@ function ResponsiveAppBar({ user, url }) {
             alert("Please Enter some Rhymes");
             return;
         } else {
-            Axios.post("https://long-ruby-quail-slip.cyclic.app/tickets",
+            Axios.post("http://localhost:8000/tickets",
                 {
                     Username: searchParams.get('user'),
                     Song: song,
